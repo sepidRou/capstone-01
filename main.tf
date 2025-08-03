@@ -1,6 +1,7 @@
 # Configure the Azure provider
 provider "azurerm" {
   features {}
+  subscription_id = "bba869c2-cde4-469f-8b4c-14cf4c3841b0"
 }
 
 # Call the network part (module)
@@ -28,3 +29,11 @@ module "appservice" {
   resource_group_name = var.resource_group_name
   location            = var.location
 }
+
+# Call the storage part to provision the Azure Storage Account
+module "storage" {
+  source              = "./parts/storage"
+  resource_group_name = var.resource_group_name
+  location            = var.location
+}
+
