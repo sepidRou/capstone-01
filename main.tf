@@ -23,3 +23,8 @@ module "compute" {
   ssh_public_key_path = var.ssh_public_key_path
 }
 
+module "appservice" {
+  source              = "./parts/appservice"
+  resource_group_name = var.resource_group_name
+  location            = var.location
+}
