@@ -25,4 +25,4 @@ Capstone-01/
 │   │   └── main.tf
 │   ├── compute/
 │   │   └── main.tf
-│   └── ...
+│   └── Appservice/ 
