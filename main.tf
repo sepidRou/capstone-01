@@ -1,7 +1,7 @@
 # Configure the Azure provider
 provider "azurerm" {
   features {}
-  subscription_id = "bba869c2-cde4-469f-8b4c-14cf4c3841b0"
+  subscription_id = var.subscription_id
 }
 
 # Call the network part (module)

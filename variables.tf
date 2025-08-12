@@ -13,3 +13,8 @@ variable "location" {
 variable "ssh_public_key_path" {
   type = string
 }
+
+variable "subscription_id" {
+  description = "Azure subscription ID"
+  type        = string
+}
